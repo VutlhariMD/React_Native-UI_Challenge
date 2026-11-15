@@ -27,6 +27,8 @@ const styles = StyleSheet.create({
     height: moderateScale(40),
     borderRadius: moderateScale(12),
     backgroundColor: colors.swapBg,
+    borderWidth: 1,
+    borderColor: colors.swapBorder,
     alignItems: 'center',
     justifyContent: 'center',
   },
