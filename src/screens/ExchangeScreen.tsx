@@ -27,9 +27,15 @@ export function ExchangeScreen() {
 
   return (
     <LinearGradient
-      colors={[colors.background, colors.background, colors.backgroundGlow]}
-      start={{ x: 0, y: 0 }}
-      end={{ x: 1, y: 1 }}
+      colors={[
+        colors.background,
+        colors.background,
+        colors.backgroundGlow,
+        colors.backgroundGlowEnd,
+      ]}
+      locations={[0, 0.4, 0.75, 1]}
+      start={{ x: 0, y: 0.3 }}
+      end={{ x: 1, y: 0.8 }}
       style={styles.flex}
     >
       <SafeAreaView style={styles.flex}>
@@ -70,7 +76,7 @@ const styles = StyleSheet.create({
     width: '100%',
     maxWidth: 480,
     alignSelf: 'center',
-    paddingHorizontal: moderateScale(16),
+    paddingHorizontal: moderateScale(28),
     paddingBottom: moderateScale(24),
   },
   cardWrap: { marginTop: moderateScale(12) },
@@ -79,7 +85,8 @@ const styles = StyleSheet.create({
     fontFamily: fonts.regular,
     fontSize: fontScale(14),
     textAlign: 'center',
-    marginVertical: moderateScale(14),
+    marginTop: moderateScale(14),
+    marginBottom: moderateScale(16),
   },
-  details: { marginTop: moderateScale(20) },
+  details: { marginTop: moderateScale(24) },
 });
