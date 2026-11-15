@@ -2,10 +2,11 @@ import { useState } from 'react';
 import { ScrollView, Text, View, StyleSheet } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import ScreenHeader from '../components/ScreenHeader';
-import ExchangeCard from '../components/ExchangeCard';
-import GradientButton from '../components/GradientButton';
-import { CurrencyData } from '../components/CurrencyPanel';
+import { ScreenHeader } from '../components/ScreenHeader';
+import { ExchangeCard } from '../components/ExchangeCard';
+import { GradientButton } from '../components/GradientButton';
+import { InfoRow } from '../components/InfoRow';
+import type { CurrencyData } from '../components/CurrencyPanel';
 import { colors, fonts } from '../theme';
 import { moderateScale, fontScale } from '../utils/responsive';
 
@@ -65,7 +66,13 @@ export default ExchangeScreen;
 
 const styles = StyleSheet.create({
   flex: { flex: 1 },
-  content: { paddingHorizontal: moderateScale(16), paddingBottom: moderateScale(24) },
+  content: {
+    width: '100%',
+    maxWidth: 480,
+    alignSelf: 'center',
+    paddingHorizontal: moderateScale(16),
+    paddingBottom: moderateScale(24),
+  },
   cardWrap: { marginTop: moderateScale(12) },
   rate: {
     color: colors.text,
