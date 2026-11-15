@@ -1,6 +1,12 @@
 import { Dimensions, PixelRatio } from 'react-native';
 
-const { width, height } = Dimensions.get('window');
+const window = Dimensions.get('window');
+
+// Stop scaling past a phone-sized width so wide browsers don't inflate the UI
+const MAX_WIDTH = 480;
+const width = Math.min(window.width, MAX_WIDTH);
+const height = window.height;
+
 const BASE_WIDTH = 375;
 const BASE_HEIGHT = 812;
 
