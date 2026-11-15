@@ -16,3 +16,11 @@ export const colors = {
   buttonEnd: '#EDE6EA',
   buttonText: '#111111',
 } as const;
+
+export const spacing = { xs: 4, sm: 8, md: 16, lg: 24, xl: 32 } as const;
+
+export const fonts = {
+  light: 'DMSans_300Light',
+  regular: 'DMSans_400Regular',
+  medium: 'DMSans_500Medium',
+} as const;
