@@ -23,10 +23,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingVertical: moderateScale(8),
+    paddingVertical: moderateScale(5),
   },
   label: {
-   
+    color: colors.infoText,
     fontFamily: fonts.regular,
     fontSize: fontScale(14),
   },
@@ -35,4 +35,4 @@ const styles = StyleSheet.create({
     fontFamily: fonts.regular,
     fontSize: fontScale(14),
   },
-})
+});
