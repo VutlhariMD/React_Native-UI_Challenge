@@ -2,8 +2,9 @@
 A crypto Exchange screen from the crypto exchange screen built with Expo, Expo Router  and Typescript.
 Focuses on the design implementation, styling with React Native 'StyleSheet' , reusable components and responsiveness across different screen sizes.
 
+### User Interface
 
-<img width="1162" height="922" alt="image" src="https://github.com/user-attachments/assets/74b440ec-e48a-4d83-bd72-5dc5d5edf3c5" />
+<img width="1162" height="700" alt="image" src="https://github.com/user-attachments/assets/74b440ec-e48a-4d83-bd72-5dc5d5edf3c5" />
 
 
 
